@@ -6,27 +6,27 @@ import Card from "./common/Card";
 const projects = [
   {
     title: "React Basics",
-    imageSrc: "/Images/Certificates/certificate3.png",
+    imageSrc: require("../Assets/Images/Certificates/certificate3.png"),
     url: "https://coursera.org/share/9b5d61145d0b5953dec2596f0d79d004",
   },
   {
     title: "Advanced React",
-    imageSrc: "/Images/Certificates/certificate4.png",
+    imageSrc: require("../Assets/Images/Certificates/certificate4.png"),
     url: "https://coursera.org/share/6983f06728f38b983398d6be9623a563",
   },
   {
     title: "Version Control",
-    imageSrc: "/Images/Certificates/certificate5.png",
+    imageSrc: require("../Assets/Images/Certificates/certificate5.png"),
     url: "https://coursera.org/share/c2e91798bd5bcdcff7e53fbf06952901",
   },
   {
     title: "Programming With JavaScript",
-    imageSrc: "/Images/Certificates/certificate2.png",
+    imageSrc: require("../Assets/Images/Certificates/certificate2.png"),
     url: "https://coursera.org/share/e31a456fd18313a76ce72dc651f3d24b",
   },
   {
     title: "Introduction to Frontend-Development",
-    imageSrc: "/Images/Certificates/certificate1.png",
+    imageSrc: require("../Assets/Images/Certificates/certificate1.png"),
     url: "https://coursera.org/share/4ae2183221b69361a350e64f36a9ced8",
   },
 ];

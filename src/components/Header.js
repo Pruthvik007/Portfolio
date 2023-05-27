@@ -74,7 +74,7 @@ const Header = () => {
               >
                 Certifications
               </a>
-              <a target="_blank" href="/Resume.pdf">
+              <a target="_blank" href={require("../Assets/Resume.pdf")}>
                 My Resume
               </a>
               <a onClick={handleClick("contactme")} href="/#contact-me">
