@@ -8,14 +8,14 @@ const projects = [
     title: "React Application",
     description:
       "A Simple React Application to view Recent Movies and TV Shows and filter them based on different categories.",
-    getImageSrc: () => "/Images/Projects/photo1.png",
+    getImageSrc: () => process.env.PUBLIC_URL + "/Images/Projects/photo1.png",
     url: "https://github.com/Pruthvik007/movies",
   },
   {
     title: "MERN Stack Application",
     description:
       "MERN Stack Application through which an admin can keep track of an Organisation's Employee Details",
-    getImageSrc: () => "/Images/Projects/photo2.png",
+    getImageSrc: () => process.env.PUBLIC_URL + "/Images/Projects/photo2.png",
     url: "https://github.com/Pruthvik007/MERN-APP",
   },
 ];
