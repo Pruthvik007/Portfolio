@@ -1,28 +1,33 @@
 import React from "react";
 import FullScreenSection from "./common/FullScreenSection";
 import { Box, Heading } from "@chakra-ui/react";
-import Card from "./common/Card";
+import CardComponent from "./common/CardComponent";
 
 const projects = [
   {
-    title: "React Basics",
-    imageSrc: require("../Assets/Images/Certificates/certificate3.png"),
-    url: "https://coursera.org/share/9b5d61145d0b5953dec2596f0d79d004",
-  },
-  {
     title: "Advanced React",
-    imageSrc: require("../Assets/Images/Certificates/certificate4.png"),
+    imageSrc: require("../Assets/Images/Certificates/certificate6.png"),
     url: "https://coursera.org/share/6983f06728f38b983398d6be9623a563",
   },
   {
-    title: "Version Control",
+    title: "React Basics",
     imageSrc: require("../Assets/Images/Certificates/certificate5.png"),
+    url: "https://coursera.org/share/9b5d61145d0b5953dec2596f0d79d004",
+  },
+  {
+    title: "Version Control",
+    imageSrc: require("../Assets/Images/Certificates/certificate4.png"),
     url: "https://coursera.org/share/c2e91798bd5bcdcff7e53fbf06952901",
   },
   {
     title: "Programming With JavaScript",
-    imageSrc: require("../Assets/Images/Certificates/certificate2.png"),
+    imageSrc: require("../Assets/Images/Certificates/certificate3.png"),
     url: "https://coursera.org/share/e31a456fd18313a76ce72dc651f3d24b",
+  },
+  {
+    title: "HTML and CSS In Depth",
+    imageSrc: require("../Assets/Images/Certificates/certificate2.png"),
+    url: "https://coursera.org/share/38c16912f7f9c7e30d8d50ca3577bc58",
   },
   {
     title: "Introduction to Frontend-Development",
@@ -48,12 +53,13 @@ const CertificationsSection = () => {
         gridGap={8}
       >
         {projects.map((project) => (
-          <Card
-            key={project.title}
-            title={project.title}
-            imageSrc={project.imageSrc}
-            url={project.url}
-          />
+          <div key={project.title}>
+            <CardComponent
+              title={project.title}
+              imageSrc={project.imageSrc}
+              url={project.url}
+            />
+          </div>
         ))}
       </Box>
     </FullScreenSection>

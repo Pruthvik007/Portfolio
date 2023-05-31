@@ -33,7 +33,6 @@ const ScrollToTop = () => {
             right: "2rem",
           }}
           onClick={scrollToTop}
-          color="secondary"
         >
           <FontAwesomeIcon icon={faArrowUp} />
         </Button>

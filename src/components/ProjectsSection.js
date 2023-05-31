@@ -1,7 +1,7 @@
 import React from "react";
 import FullScreenSection from "./common/FullScreenSection";
 import { Box, Heading } from "@chakra-ui/react";
-import Card from "./common/Card";
+import CardComponent from "./common/CardComponent";
 
 const projects = [
   {
@@ -37,7 +37,7 @@ const ProjectsSection = () => {
         gridGap={8}
       >
         {projects.map((project) => (
-          <Card
+          <CardComponent
             key={project.title}
             title={project.title}
             description={project.description}
