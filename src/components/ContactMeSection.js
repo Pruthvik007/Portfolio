@@ -52,7 +52,7 @@ const LandingSection = () => {
       py={8}
       spacing={8}
     >
-      <VStack w="1024px" p={1} alignItems="flex-start">
+      <VStack w="100%" p={1} alignItems="flex-start">
         <Heading as="h1">Contact me</Heading>
         <Box p={6} rounded="md" w="100%">
           <form onSubmit={formik.handleSubmit}>

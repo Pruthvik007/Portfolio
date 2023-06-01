@@ -8,13 +8,14 @@ import { AlertProvider } from "./context/alertContext";
 import Alert from "./components/common/Alert";
 import CertificationsSection from "./components/CertificationsSection";
 import ScrollToTop from "./components/common/ScrollToTop";
+import NavBar from "./components/NavBar";
 
 function App() {
   return (
     <ChakraProvider>
       <AlertProvider>
         <main>
-          <Header />
+          <NavBar />
           <LandingSection />
           <ProjectsSection />
           <CertificationsSection />
