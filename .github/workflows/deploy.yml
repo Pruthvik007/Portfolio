@@ -2,26 +2,38 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [main]
+    branches:
+      - main
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    steps:
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 16.x
 
-      - uses: actions/checkout@v3
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16
 
       - name: Install dependencies
         run: npm install
 
-      - name: Build React app
-        run: npm run build
+      - name: Configure Git
+        run: |
+          git config --global user.email "saipruthvik07@gmail.com"
+          git config --global user.name "Sai Pruthvik"
 
-      - name: Deploy to GitHub Pages
-        uses: actions/deploy-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          public_dir: build
+      - name: Set up PAT as environment variable
+        run: echo "REACT_APP_GH_TOKEN=${{ secrets.GH_TOKEN }}" >> .env
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+
+      - name: Build and deploy to GitHub Pages
+        run: |
+          npm run build
+          npm run deploy
+        env:
+          CI: true
