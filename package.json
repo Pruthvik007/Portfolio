@@ -25,7 +25,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build -u SaiPruthvik saipruthvik07@gmail.com -b gh-pages -t $REACT_APP_GH_TOKEN",
+    "deploy": "gh-pages -d build -u 'Sai Pruthvik <saipruthvik07@gmail.com>' -b gh-pages -t $REACT_APP_GH_TOKEN",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
