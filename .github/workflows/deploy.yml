@@ -26,6 +26,11 @@ jobs:
           git config --global user.email "saipruthvik07@gmail.com"
           git config --global user.name "Sai Pruthvik"
 
+      - name: Set up PAT as environment variable
+        run: echo "REACT_APP_GH_TOKEN=${{ secrets.GH_TOKEN }}" >> .env
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+
       - name: Build and deploy to GitHub Pages
         run: |
           npm run build
