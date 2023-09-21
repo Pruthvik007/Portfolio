@@ -3,7 +3,7 @@ import FullScreenSection from "./common/FullScreenSection";
 import { Box, Heading } from "@chakra-ui/react";
 import CardComponent from "./common/CardComponent";
 
-const projects = [
+const certifications = [
   {
     title: "Advanced React",
     imageSrc: require("../Assets/Images/Certificates/certificate6.png"),
@@ -52,12 +52,12 @@ const CertificationsSection = () => {
         gridTemplateColumns="repeat(2,minmax(0,1fr))"
         gridGap={8}
       >
-        {projects.map((project) => (
-          <div key={project.title}>
+        {certifications.map((certification) => (
+          <div key={certification.title}>
             <CardComponent
-              title={project.title}
-              imageSrc={project.imageSrc}
-              url={project.url}
+              title={certification.title}
+              imageSrc={certification.imageSrc}
+              url={certification.url}
             />
           </div>
         ))}

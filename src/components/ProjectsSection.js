@@ -37,13 +37,15 @@ const ProjectsSection = () => {
         gridGap={8}
       >
         {projects.map((project) => (
-          <CardComponent
-            key={project.title}
-            title={project.title}
-            description={project.description}
-            imageSrc={project.getImageSrc()}
-            url={project.url}
-          />
+          <div key={project.title}>
+            <CardComponent
+              key={project.title}
+              title={project.title}
+              description={project.description}
+              imageSrc={project.getImageSrc()}
+              url={project.url}
+            />
+          </div>
         ))}
       </Box>
     </FullScreenSection>

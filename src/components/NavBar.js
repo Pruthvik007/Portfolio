@@ -84,11 +84,11 @@ const NavBar = () => {
           Portfolio
         </a>
         <ul className="nav navbar-nav d-flex flex-row">
-          {socials.map((social, index) => (
-            <li key={index} className="nav-item">
+          {socials.map((social) => (
+            <li key={social.url} className="nav-item">
               <a
                 className="nav-link"
-                key={index}
+                key={social.url}
                 href={social.url}
                 target="_blank"
                 rel="noopener noreferrer"
