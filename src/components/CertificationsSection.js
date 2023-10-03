@@ -1,6 +1,6 @@
 import React from "react";
 import FullScreenSection from "./common/FullScreenSection";
-import { Box, Heading } from "@chakra-ui/react";
+import { Heading, SimpleGrid } from "@chakra-ui/react";
 import CardComponent from "./common/CardComponent";
 
 const certifications = [
@@ -47,11 +47,7 @@ const CertificationsSection = () => {
       spacing={8}
     >
       <Heading as="h1">My Certifications</Heading>
-      <Box
-        display="grid"
-        gridTemplateColumns="repeat(2,minmax(0,1fr))"
-        gridGap={8}
-      >
+      <SimpleGrid columns={[1, 1, 2, 2, 2, 2]} gap={5}>
         {certifications.map((certification) => (
           <div key={certification.title}>
             <CardComponent
@@ -61,7 +57,7 @@ const CertificationsSection = () => {
             />
           </div>
         ))}
-      </Box>
+      </SimpleGrid>
     </FullScreenSection>
   );
 };
