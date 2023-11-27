@@ -126,7 +126,7 @@ const NavBar = () => {
               <a
                 className="nav-link"
                 target="_blank"
-                href={require("../Assets/Resume.pdf")}
+                href={require("../Assets/Resume2.pdf")}
               >
                 My Resume
               </a>
