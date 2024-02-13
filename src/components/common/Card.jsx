@@ -1,11 +1,11 @@
 import { Heading, HStack, Image, Text, VStack } from "@chakra-ui/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import React from "react";
 
-const CardComponent = ({ title, description, imageSrc, url }) => {
+// eslint-disable-next-line react/prop-types
+const Card = ({ title, description, imageSrc, url }) => {
   return (
-    <HStack style={{ textAlign: "center" }}>
+    <HStack>
       <VStack>
         <Image src={imageSrc} alt={title} />
         <Heading>{title}</Heading>
@@ -21,4 +21,4 @@ const CardComponent = ({ title, description, imageSrc, url }) => {
   );
 };
 
-export default CardComponent;
+export default Card;

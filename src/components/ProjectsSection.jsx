@@ -1,21 +1,22 @@
-import React from "react";
 import FullScreenSection from "./common/FullScreenSection";
 import { Heading, SimpleGrid } from "@chakra-ui/react";
 import CardComponent from "./common/CardComponent";
+import project1Image from "../Assets/Images/Projects/photo1.png";
+import project2Image from "../Assets/Images/Projects/photo2.png";
 
 const projects = [
   {
     title: "React Application",
     description:
-      "A Simple React Application to view Recent Movies and TV Shows and filter them based on different categories.",
-    getImageSrc: () => require("../Assets/Images/Projects/photo1.png"),
-    url: "https://github.com/Pruthvik007/movies",
+      "A Simple React Application to View Information of Movies and TV Shows and Filter them based on different Categories.",
+    getImageSrc: () => project1Image,
+    url: "https://github.com/Pruthvik007/movies-and-series",
   },
   {
     title: "MERN Stack Application",
     description:
       "MERN Stack Application through which an admin can keep track of an Organisation's Employee Details",
-    getImageSrc: () => require("../Assets/Images/Projects/photo2.png"),
+    getImageSrc: () => project2Image,
     url: "https://github.com/Pruthvik007/MERN-APP",
   },
 ];
@@ -49,4 +50,3 @@ const ProjectsSection = () => {
 };
 
 export default ProjectsSection;
-/*base sm md lg xl 2xl*/

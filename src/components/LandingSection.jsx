@@ -1,4 +1,3 @@
-import React from "react";
 import { Avatar, Heading, VStack, Text } from "@chakra-ui/react";
 import FullScreenSection from "./common/FullScreenSection";
 
@@ -15,7 +14,7 @@ const LandingSection = () => (
     id="landing-section"
   >
     <VStack textAlign="center">
-      <Avatar src={require("../Assets/Images/avatar.png")} size="xl" />
+      <Avatar src={import("../Assets/Images/avatar.png")} size="xl" />
       <Text>{greeting}</Text>
       <Heading>{bio1}</Heading>
       <Heading>{bio2}</Heading>

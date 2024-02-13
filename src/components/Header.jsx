@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import { useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
@@ -75,7 +75,7 @@ const Header = () => {
               >
                 Certifications
               </a>
-              <a target="_blank" href={require("../Assets/Resume.pdf")}>
+              <a target="_blank" href={import("../Assets/Resume.pdf")}>
                 My Resume
               </a>
               <a onClick={handleClick("contactme")} href="/#contact-me">

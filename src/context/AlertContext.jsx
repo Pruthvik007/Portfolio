@@ -1,6 +1,6 @@
-import { createContext, useContext, useState } from "react";
+import { createContext, useState } from "react";
 
-const AlertContext = createContext(undefined);
+export const AlertContext = createContext(undefined);
 
 export const AlertProvider = ({ children }) => {
   const [state, setState] = useState({
@@ -21,5 +21,3 @@ export const AlertProvider = ({ children }) => {
     </AlertContext.Provider>
   );
 };
-
-export const useAlertContext = () => useContext(AlertContext);

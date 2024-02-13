@@ -1,6 +1,6 @@
-import * as React from "react";
 import { VStack } from "@chakra-ui/react";
 
+// eslint-disable-next-line react/prop-types
 const FullScreenSection = ({ children, isDarkBackground, ...boxProps }) => {
   return (
     <VStack
