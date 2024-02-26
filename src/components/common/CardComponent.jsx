@@ -1,4 +1,4 @@
-import { Heading, HStack, Image, Text, VStack } from "@chakra-ui/react";
+import { Button, Heading, HStack, Image, Text, VStack } from "@chakra-ui/react";
 
 // eslint-disable-next-line react/prop-types
 const CardComponent = ({ title, description, imageSrc, url }) => {
@@ -8,9 +8,13 @@ const CardComponent = ({ title, description, imageSrc, url }) => {
         <Image src={imageSrc} alt={title} />
         <Heading>{title}</Heading>
         <Text>{description}</Text>
-        <a target="_blank" href={url}>
-          <Text>View Details</Text>
-        </a>
+        <HStack>
+          <Button>
+            <a target="_blank" href={url}>
+              <Text>View Details</Text>
+            </a>
+          </Button>
+        </HStack>
       </VStack>
     </HStack>
   );

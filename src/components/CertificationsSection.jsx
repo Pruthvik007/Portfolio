@@ -1,12 +1,14 @@
 import FullScreenSection from "./common/FullScreenSection";
 import { Heading, SimpleGrid } from "@chakra-ui/react";
 import CardComponent from "./common/CardComponent";
-import certificate6 from "../Assets/Images/Certificates/certificate6.png";
-import certificate5 from "../Assets/Images/Certificates/certificate5.png";
-import certificate4 from "../Assets/Images/Certificates/certificate4.png";
-import certificate3 from "../Assets/Images/Certificates/certificate3.png";
-import certificate2 from "../Assets/Images/Certificates/certificate2.png";
-import certificate1 from "../Assets/Images/Certificates/certificate1.png";
+import {
+  certificate1,
+  certificate2,
+  certificate3,
+  certificate4,
+  certificate5,
+  certificate6,
+} from "../Assets/assets";
 
 const certifications = [
   {

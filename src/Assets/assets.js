@@ -1,0 +1,9 @@
+export { default as Resume } from "../Assets/Resume2.pdf";
+export { default as certificate6 } from "../Assets/Images/Certificates/certificate6.png";
+export { default as certificate5 } from "../Assets/Images/Certificates/certificate5.png";
+export { default as certificate4 } from "../Assets/Images/Certificates/certificate4.png";
+export { default as certificate3 } from "../Assets/Images/Certificates/certificate3.png";
+export { default as certificate2 } from "../Assets/Images/Certificates/certificate2.png";
+export { default as certificate1 } from "../Assets/Images/Certificates/certificate1.png";
+export { default as project1Image } from "../Assets/Images/Projects/photo1.png";
+export { default as project2Image } from "../Assets/Images/Projects/photo2.png";

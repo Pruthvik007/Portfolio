@@ -2,7 +2,7 @@ import { createContext, useState } from "react";
 
 export const AlertContext = createContext(undefined);
 
-export const AlertProvider = ({ children }) => {
+const AlertProvider = ({ children }) => {
   const [state, setState] = useState({
     isOpen: false,
     type: "success",
@@ -21,3 +21,5 @@ export const AlertProvider = ({ children }) => {
     </AlertContext.Provider>
   );
 };
+
+export default AlertProvider;

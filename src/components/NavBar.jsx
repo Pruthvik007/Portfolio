@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import Resume2 from "../Assets/Resume2.pdf";
+import { Resume } from "../Assets/assets";
 
 const socials = [
   {
@@ -124,7 +124,7 @@ const NavBar = () => {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" target="_blank" href={Resume2}>
+              <a className="nav-link" target="_blank" href={Resume}>
                 My Resume
               </a>
             </li>

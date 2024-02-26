@@ -1,8 +1,7 @@
 import FullScreenSection from "./common/FullScreenSection";
 import { Heading, SimpleGrid } from "@chakra-ui/react";
 import CardComponent from "./common/CardComponent";
-import project1Image from "../Assets/Images/Projects/photo1.png";
-import project2Image from "../Assets/Images/Projects/photo2.png";
+import { project1Image, project2Image } from "../Assets/assets";
 
 const projects = [
   {

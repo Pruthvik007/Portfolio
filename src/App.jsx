@@ -1,31 +1,25 @@
-import { ChakraProvider } from "@chakra-ui/react";
-import LandingSection from "./components/LandingSection";
-import ProjectsSection from "./components/ProjectsSection";
+import CertificationsSection from "./components/CertificationsSection";
 import ContactMeSection from "./components/ContactMeSection";
 import Footer from "./components/Footer";
-import { AlertProvider } from "./context/AlertContext";
-import Alert from "./components/common/Alert";
-import CertificationsSection from "./components/CertificationsSection";
-import ScrollToTop from "./components/common/ScrollToTop";
+import LandingSection from "./components/LandingSection";
 import NavBar from "./components/NavBar";
+import ProjectsSection from "./components/ProjectsSection";
+import Alert from "./components/common/Alert";
+import ScrollToTop from "./components/common/ScrollToTop";
 
-function App() {
+const App = () => {
   return (
-    <ChakraProvider>
-      <AlertProvider>
-        <main>
-          <NavBar />
-          <LandingSection />
-          <ProjectsSection />
-          <CertificationsSection />
-          <ContactMeSection />
-          <Footer />
-          <Alert />
-          <ScrollToTop />
-        </main>
-      </AlertProvider>
-    </ChakraProvider>
+    <main>
+      <NavBar />
+      <LandingSection />
+      <ProjectsSection />
+      <CertificationsSection />
+      <ContactMeSection />
+      <Footer />
+      <Alert />
+      <ScrollToTop />
+    </main>
   );
-}
+};
 
 export default App;
