@@ -28,10 +28,10 @@ jobs:
       - name: Upload Build Files
         uses: actions/upload-artifact@v2
         with:
-          name: build-files-upload
+          name: production-files
           path: ./dist
 
-      - name: Download artifact
+      - name: Download Artifact
         uses: actions/download-artifact@v2
         with:
           name: production-files
