@@ -1,4 +1,4 @@
-name: Deploy
+name: Deployment of Portfolio
 
 on:
   push:
@@ -25,19 +25,12 @@ jobs:
       - name: Build project
         run: npm run build
 
-      - name: Upload production-ready build files
+      - name: Upload Build Files
         uses: actions/upload-artifact@v2
         with:
-          name: production-files
+          name: build-files-upload
           path: ./dist
 
-  deploy:
-    name: Deploy
-    needs: build
-    runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main'
-
-    steps:
       - name: Download artifact
         uses: actions/download-artifact@v2
         with:
