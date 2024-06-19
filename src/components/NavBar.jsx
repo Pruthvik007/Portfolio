@@ -15,7 +15,7 @@ const socials = [
   },
   {
     icon: faLinkedin,
-    url: "https://www.linkedin.com/in/sai-pruthvik-334058309/",
+    url: "https://www.linkedin.com/in/sai-pruthvik-3515b9314/",
   },
 ];
 
