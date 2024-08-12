@@ -1,4 +1,4 @@
-export { default as Resume } from "../Assets/Resume3.pdf";
+export { default as Resume } from "../Assets/Resume.pdf";
 export { default as certificate6 } from "../Assets/Images/Certificates/certificate6.png";
 export { default as certificate5 } from "../Assets/Images/Certificates/certificate5.png";
 export { default as certificate4 } from "../Assets/Images/Certificates/certificate4.png";
